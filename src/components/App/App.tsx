@@ -1,6 +1,5 @@
+import s from "./App.module.scss";
+
 export const App = () => {
-    return (
-        <div>
-            React App
-        </div>
-    )}
+  return <div className={s.app}>React App</div>;
+};
