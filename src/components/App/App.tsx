@@ -1,5 +1,5 @@
-import s from "./App.module.scss";
+import s from './App.module.scss'
 
 export const App = () => {
-  return <div className={s.app}>React App</div>;
-};
+  return <div className={s.app}>App</div>
+}
