@@ -3,19 +3,19 @@ export const buildCssLoaders = (isDev: boolean) => {
     test: /\.s[ac]ss$/i,
     exclude: /node_modules/,
     use: [
-      "style-loader",
+      'style-loader',
       {
-        loader: "css-loader",
+        loader: 'css-loader',
         options: {
           modules: {
-            auto: (resPath: string) => resPath.includes(".module."),
+            auto: (resPath: string) => resPath.includes('.module.'),
             localIdentName: isDev
-              ? "[path]__[local]--[hash:base64:8]"
-              : "[hash:base64:8]",
+              ? '[path]__[local]--[hash:base64:8]'
+              : '[hash:base64:8]',
           },
         },
       },
-      "sass-loader",
+      'sass-loader',
     ],
-  };
-};
+  }
+}

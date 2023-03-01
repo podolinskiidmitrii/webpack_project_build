@@ -1,4 +1,4 @@
-import { BuildOptions } from '../types'; 
+import { BuildOptions } from '../types'
 
 interface IBuildBabelLoader extends BuildOptions {
   isTsx: boolean
@@ -25,5 +25,5 @@ export function buildBabelLoader({ isDev, isTsx }: IBuildBabelLoader) {
         ].filter(Boolean),
       },
     },
-  };
+  }
 }
